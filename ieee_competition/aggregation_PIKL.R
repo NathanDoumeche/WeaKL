@@ -1,13 +1,11 @@
 library(opera)
-PIKL_expert_off <- read.csv2("data/PIKL_expert_corr (1).csv", sep=",")
-PIKL_expert_off$Load <- as.numeric(PIKL_expert_off$Load)
+PIKL_expert_off <- read.csv2("PIKL_expert_corr.csv", sep=",", stringsAsFactors = F)
 PIKL_expert_off$PIKL <- as.numeric(PIKL_expert_off$PIKL)
 
-PIKL_expert_on <- read.csv2("data/PIKL_expert_corr_online.csv", sep=",")
-PIKL_expert_on$Load <- as.numeric(PIKL_expert_on$Load)
+PIKL_expert_on <- read.csv2("PIKL_expert_corr_online.csv", sep=",", stringsAsFactors = F)
 PIKL_expert_on$PIKL <- as.numeric(PIKL_expert_on$PIKL)
 
-prev_corr <- readRDS('data/experts_corr.RDS')
+prev_corr <- readRDS('experts_corr.RDS')
 prev_corr$PIKL_off <- PIKL_expert_off$PIKL
 prev_corr$PIKL_on <- PIKL_expert_on$PIKL
 test3 <- which(prev_corr$Time >= as.POSIXct(strptime("2020-07-01 00:00:00", "%Y-%m-%d %H:%M:%S"), tz="UTC"))
