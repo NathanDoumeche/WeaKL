@@ -18,3 +18,14 @@ Go to the corresponding directory and unzip the file _data\_corr.csv.zip_.
 
 ## Use case 2: Forecasting the Frecnh electricity load during the energy crisis
 Go to the corresponding directory and unzip the file _dataset_national.csv.zip_. 
+
+
+## Toy example on hierarchical forecasting
+The toy example on hierarchical forecasting was generated with the file _hierarchical simulation.ipynb_ in the Hierarchical forecasting folder.
+
+## Use case 3: Hierarchical forecasting of the Australian tourism demand
+The files useful for the use case on hierarchical tourism forecasting are in the folder _Hierarchical forecasting_. 
+The relevant files are
+- the data file _TourismData_v3.csv_,
+- the code _Tourism.ipynb_.
+
